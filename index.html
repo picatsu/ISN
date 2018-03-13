@@ -1,0 +1,391 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pendu </title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<meta name="keywords" content="Site HTML/CSS fait par achraf / max / fred" />
+<meta name="viewport" content="width=device-width"/>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<style type="text/css"> 
+#div_carte { 
+height : 250px; /* IMPERATIF */ /* /// cette balise defini les dimentions de la map dans la derniere page //// */
+width : 300px; 
+margin : auto; 
+border : 1px solid #888; 
+} 
+</style> 
+
+</head> 
+<!-- /// ICI en remarque la fin du head et le debut du vrai site (ce qui va etre affiché ) //// -->
+<body> 
+
+
+<div id="header_wrapper">
+	<div id="site_header">
+    	<div id="site_title"><a href="http://www.lyc-maupassant-colombes.ac-versailles.fr/" target="_blank"> Pendu </a></div>  
+        <img src="images/header.png" ></a>
+    </div>
+</div>
+<!-- /// ICI on met en place l'image du fond du site +titre  //// -->
+
+
+
+<div id="main_wrapper"> 
+	<div id="site_main">
+            <div id="Menu" class="section"> 
+                <div class="homebox left">
+                	<div class="row1 box box1"> <!-- jusqu'ici on a coupé le menu ou le premier interface du site en plusieurs parties (box) +leur emplacement precis est donné dans le CSS-->
+
+                    	<div class="box_with_padding">
+                        	<h2><a href="#Qui somme nous?">Qui somme nous? </a></h2> <!-- J'utilise le <a href=#...> a fin de mettre un lien vers la partie agrandie du site -->
+                         	Nous sommes un groupe de .... 
+						</div>
+                    </div>
+
+                    <div class="row1 box2">
+                    	<div class="box_with_padding">
+                        	<h2><a href="#Notre Projet">Notre projet ? </a></h2>
+                            Nos Raisons et Objectifs :...
+						</div>
+                    </div>
+
+                    <div class="row1 box3">
+                    	<div class="box_with_padding">
+                        	<h2><a href="#Le code">Les programmes !</a></h2>
+                             Pour télécharger les programmes ...
+						</div>
+                    </div>
+
+                    <div class="row1 box4">
+                    	<div class="box_with_padding">
+                        	<h2><a href="#devoirs">Nos devoirs </a></h2>
+                           Ce que l'on à fait tout au long de l'année.
+						</div>
+                    </div>
+                </div>
+
+ 				<div class="homebox right">
+                	<div class="row1 box5">
+                    	<div class="box_with_padding">
+                        	<h2><a href="#source">Nos sources </h2>
+                         	Voici les liens qui nous ont... 
+						</div>
+                    </div>
+                    <br>
+
+                   <div class="row1 box">
+                                                    
+                        <h2><a href="#Divertissement"> <br >  DECOUVERTE !  </h2>
+                        <p><cite>Les professeurs sont faits pour les gens qui n'apprendraient rien   tout seuls. Le savoir qui compte est celui qu'on se donne soi-même, par curiosité naturelle, passion de savoir.</cite> <br>
+
+                         Nos premiers pas en programmation, allons-y !</p>
+
+                    </div>
+                    <br><br><br>
+
+                     <div class="row1 box6">
+                        <div id="mini_contact_form">
+                            <h3><a href="#Nous contacter">Contact rapide </a></h3> 
+                            <form method="post" name="contact" action="http://www.lyc-maupassant-colombes.ac-versailles.fr/" target="_blank" />
+                                <div class="col_half left">
+                                    <textarea id="text_small" name="text" rows="0" cols="0" 
+                                        onfocus="clearText(this)" onblur="clearText(this)">Message</textarea>
+                                </div>                                
+                                <div class="col_half right">
+                                    <input name="author" type="text" class="input_field" id="author_small"     
+                                        onfocus="clearText(this)" onblur="clearText(this)" value="Name" maxlength="40" />
+
+                                        <!--  input est utilisé  pour créer des contrôles interactifs dans les formulaires web.  -->
+
+                                    <input name="email" type="text" class="input_field" id="email_small" 
+                                        onfocus="clearText(this)" onblur="clearText(this)" value="Email" maxlength="40" />
+                                    <input type="submit" class="submit_btn float_l" name="submit" id="submit_small" value="envoyer" />
+                                </div>                                
+                            </form>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+
+
+
+            <!-- //////////   Fin du menu !   ////////////-->   <!-- ////////////// On rempli les details et les differentes pages a partir de maintenant  ! ////////////////////-->
+            
+            <div class="section section_with_padding" id="Qui somme nous?" > 
+                <h1>Qui sommes-nous? </h1>
+                <div class="half left">
+                    <div class=" NOUS "> 
+               <marquee scrollamount="15" direction="Right" onmouseover="this.stop()" onmouseout="this.start()"> <!-- la balise marquee permet d'affiché des images en diapo -->
+                <img height="200" width="300" src="images/BG1.jpg" />
+                <img height="200" width="300" src="images/aladin.jpg"/>
+                <img height="200" width="350" src="images/lycee.jpg"/>
+                
+                <img height="200" width="300" src="images/2.jpg"/>
+                <img height="200" width="200" src="images/3.jpg"/>
+                <img height="200" width="200" src="images/4.jpg"/>
+                <img height="200" width="200" src="images/lycee1.jpg"/>
+
+
+                </marquee>
+	
+                  </div>
+                    <p><em>Achraf / Max / le dos de Frederic </em></p> <!-- FRED ne veux pas se prendre en photo ^^ --> 
+                    <p> Nous sommes un groupe de joyeux développeurs en herbe, avec Max LEREBOURG s'occupant
+			de la programmation python, Achraf Lahkiky pour le HTML/CSS et Frederic XUCXAI
+			pour nous aider. <br/>
+			Nous avons été encadré tout le long de l'année scolaire 2013/2014 par M Merdy 
+			notre professeur d'ISN au lycée Guy de Maupassant. </p>
+				</div>
+                
+                <a href="#Menu" class="home_btn">Acceuil</a>            <!-- les trois balises suivantes permettent le changement des pages -->
+                <a href="#Menu" class="page_nav_btn avant">Retour</a>
+                <a href="#Notre Projet" class="page_nav_btn apres">Avancer</a>
+            </div> 
+
+            <!-- Fin de "Qui somme nous " -->
+            
+            <div class="section section_with_padding" id="Notre Projet"> 
+                <h1>Notre Projet Principale </h1>
+                
+        <div class="image de programmation quelconque bla bla"> <IMG SRC="images/pendu.jpg" WIDTH=350 HEIGHT=180 > 
+                	<p><em>Nos Raisons et Objectifs : </em></p>
+                	<ul class="list_bullet">
+                        <li>1 :  Nous avons voulu créer un programme du jeu du Pendu
+				en python pour notre projet commun.</li>
+                        <li>2 :  Le site ou tout sera référencé sera sur le logiciel
+				Olympe, un hébergeur en ligne.</li>
+                        <li>3 : Un programme python fonctionnel mais ne 
+				pouvant être affiché sur le site sera
+				disponible.</li>
+                        <li>4 : Le pendu comporte certaines règles particulière, comme par 
+				exemple l'ajout de niveau de difficulté.</li>
+                        <li>5 : Le site Web comportera aussi un fichier LARP montrant 
+				l'algorithme/version simplifier du jeu.</li>
+                        <li>6 : Un fichier HTML, un CSS et un programme Python fonctionnel.</li>
+                    </ul>
+                    
+                
+
+                </div>
+                <a href="#Menu" class="home_btn">Acceuil</a> 
+                <a href="#Qui somme nous?" class="page_nav_btn avant">Retour</a>
+                <a href="#Le code " class="page_nav_btn apres">Avancer</a> 
+            </div> 
+
+
+            <!-- Fin de notre Projet -->
+            
+            
+            <div class="section section_with_padding" id="Le code"> 
+               	<h1>Le code de notre programme</h1>
+                    <p>
+    Afin de télécharger le programme <u>pendu</u> en executable, veuillez cliquer <a href="programme/[executable]/Pendu executable.rar" title= "Telecharger maintenant !"  target="_blank">ici.</a>  <br>
+   Afin de télécharger le programme <u>pendu</u> en python, veuillez  cliquer <a href="programme/python compresser/pendu.rar" title= "Telecharger maintenant !"target="_blank" >ici.</a> 
+   <br><br>
+ Afin de télécharger le programme <u>2048</u> en executable, veuillez cliquer <a href="programme/[executable]/2048 executable.rar" title= "Telecharger maintenant !"target="_blank"  >ici.</a>  <br>
+ Afin de télécharger le programme <u>2048</u> en python, veuillez cliquer <a href="programme/python compresser/2048.rar" title= "Telecharger maintenant !"target="_blank"  >ici.</a> 
+ <br><br>
+ Afin de télécharger le programme <em><u>super 2048</u> </em> en executable, veuillez cliquer <a href="programme/[executable]/super 2048 executable.rar" title= "Telecharger maintenant !"target="_blank"  >ici.</a>  <br><br>
+
+ Afin de télécharger le programme <u>allumettes</u> python, veuillez cliquer <a href="programme/python compresser/Allumettes [python].rar " title= "Telecharger maintenant !" target="_blank"  >ici.</a> 
+ <br><br>
+
+ Afin de telecharger le programme <u>puissance 4 </u> en python, veuillez cliquer <a href="programme/python compresser/Puissance 4 [python].rar" title= "Telecharger maintenant !"target="_blank" >ici.</a> 
+ <br><br>
+
+ 
+ Afin de télécharger le programme <u>Dé</u> en python, veuillez cliquer <a href="programme/python compresser/Dé [python].rar" title= "Telecharger maintenant !" target="_blank" >ici.</a> 
+
+<br><br>
+
+ Nos Synthèse sont disponibles via les liens suivant :  <center >
+
+ <li>  <a href="synthese/achraf/Synthèse Achraf Lahkiky   TS3  [ISN]/index.html" title= "Bienvenue !" target="_blank"> Synthese d'Achraf </a>  </li>
+
+ <li><a href="synthese/max/index.htm" title= "Bienvenue !" target="_blank">  Synthese de Max  </a> </li>
+
+<li><a href="synthese/fred/index.html" title= "Bienvenue !" target="_blank">  Synthese de Frederic  </a> </li>  
+
+                                                      </center>
+
+ 
+ 
+</p>
+                
+                
+            
+                <a href="#Menu" class="home_btn">Acceuil</a> 
+                <a href="#Notre Projet" class="page_nav_btn avant">Retour</a>
+                <a href="#devoirs" class="page_nav_btn apres">avancer</a>
+            </div> 
+            <!-- fin du Le code  -->
+
+
+            <div class="section section_with_padding" id="devoirs"> 
+                <h1>Nos devoirs !</h1>
+                
+                  <p>
+                    Et non, cher visiteur! L'<strong>ISN</strong> n'est pas aussi facil que ce que l'on vous a présenté ! <br><br>
+                    En effet, durant notre apprentissage, nous avons eu à réaliser plusieurs devoirs maisons, qui en realité, étaient un bon entrainement pour nous .<br><br>
+                    Chaque devoir representait un défi mais aussi, une possibilité pour nous d'apprendre d'avantage et de nous ameliorer, de faconner notre maitrise des langages informatiques, que se soit pour le python ou bien le html/css .<br><br>
+                    Tous nos devoirs peuvent être consulté en ligne via le lien suivant :<a href="4/index.html" title= "vas y !" target="_blank" > içi. </a>
+
+
+                 </p>
+                  
+                <a href="#Menu" class="home_btn">Acceuil</a> 
+                <a href="#Le code" class="page_nav_btn avant">Retour</a>
+                <a href="#source" class="page_nav_btn apres">Avancer</a>
+            </div> 
+
+
+             <!-- fin de l'algorithme -->
+
+
+            <div class="section section_with_padding" id="source"> 
+                <h1>Nos sources</h1>
+                <p>Voici les liens qui nous ont aidé pour la conception de tout nos codes et l'utilisation de certaines de leurs images :</p>
+                <p><a href="http://fr.openclassrooms.com/informatique/python/cours" target="_blank" >http://fr.openclassrooms.com/informatique/python/cours </a></p>
+                <p><a href="https://fr.wikibooks.org/wiki/Accueil" target="_blank" >https://fr.wikibooks.org/wiki/Accueil</a></p>
+                <p><a href="http://fr.html.net/tutorials/html/" target="_blank">http://fr.html.net/tutorials/html/</a></p>
+                <p><a href="http://devdocs.io//" target="_blank" >http://devdocs.io// </a></p>
+                <p><a href="http://slaout.linux62.org/html_css/doc_html.html" target="_blank">http://slaout.linux62.org/html_css/doc_html.html</a></p>
+                <p><a href="http://www.freewebsitetemplates.com/" target="_blank">http://www.freewebsitetemplates.com/ </a></p>
+                <p><a href="http://larp.marcolavoie.ca/fr/Files/LarpFrV3.pdf"target="_blank" >http://larp.marcolavoie.ca/fr/Files/LarpFrV3.pdf</a></p>
+                <p><a href="http://tinyurl.com/lx6pfyu" target="_blank" >http://faireunblog.over-blog.com/article-vos-images-qui-defilent-comme-un-diaporama-39782857.html</a></p>
+                <p><a href="http://www.edicy.com/blog-fr/comment-creer-un-site-web-remarquable-partie-5-rendre-fonctionnel" target="_blank" >http://www.edicy.com/blog-fr/comment-creer-un-site-web-remarquable-partie-5-rendre-fonctionnel </a></p>
+
+                
+                
+                <a href="#Menu" class="home_btn">Acceuil</a> 
+                <a href="#devoirs" class="page_nav_btn avant">Retour</a>
+                <a href="#Divertissement" class="page_nav_btn apres">avancer</a>
+            </div>
+
+                <!--fin de nos sources !-->
+
+                <div class="section section_with_padding" id="Divertissement"> 
+                <h1> Decouverte  </h1>
+                <ol>
+                    <div id="bobo">
+                        <p>
+                            <img height="70" width="70" src="images/2048.jpg"/>&nbsp; 
+                            <img height="70" width="70" src="images/p4.jpg" />&nbsp;
+                            <img height="70" width="70" src="images/de.jpg" />&nbsp;
+                            <img height="70" width="70" src="images/m.jpg" />&nbsp;
+                            <img height="70" width="70" src="images/s2.jpg" />&nbsp;
+                            <img height="70" width="70" src="images/a.jpg" />&nbsp;
+                        </p>
+                
+                    
+                            <li> - Nous avons voulu reprendre le principe du jeu <stong>"2048" </strong> apparu sur les plates-formes mobiles qui est en ce moment dans le top 10 des applications téléphoniques, en langage python, sans interface graphique, programme fonctionnel et commenté disponible. </li>
+                            <li> - On a repris le principe du jeu mais on a modifié la taille de tableau, programme fonctionnel et commenté disponible.</li>
+                            <li> - Nous avons aussi voulu reprendre en python, le jeu Puissance 4, mais il reste assez compliqué et à ce jour n'est pas encore terminé.</li>
+                            <li> - Un jeu de dés, où les régles sont spéciales et où l'on peut parier des petites sommes, programme fonctionnel et commenté disponible.</li>
+                            <li> - Le jeu de morpion que nous avons fait au cours de l'année, programme fonctionnel et commenté disponible.</li>
+                            <li> - Nous avons aussi developpé un programme du jeu des Allumettes, qui nous tenait à coeur, programme fonctionnel et commenté disponible.</li>
+                            <li>Tous nos programmes sont libres de droits. Ils ont été réalisé grâce à la console Python, telechargeable  gratuitement  ici :<a href="https://www.python.org/download/" target="_blank">Python Shell</a>.</li>
+                    </div>
+                </ol>
+
+
+                
+            
+                <a href="#Menu" class="home_btn">Acceuil</a> 
+                <a href="#source" class="page_nav_btn avant">Retour</a>
+                <a href="#Nous contacter" class="page_nav_btn apres">avancer</a>
+            </div>
+
+            <!-- fin du jeux flash (Divertissement) -->
+
+            <div class="section section_with_padding" id="Nous contacter"> 
+                <h1>Nous contacter</h1> 
+                
+                <div class="half left">
+
+                 
+                 	Email: m6d@hotmail.fr / Phone:0689898989<br ><br>
+
+
+                    <div class="clear h20">
+                    
+                    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+                           <script type="text/javascript"> 
+                        function initCarte(){ 
+                        // création de la carte 
+                                    var oMap = new google.maps.Map( document.getElementById( 'div_carte'),{ 
+                                'center' : new google.maps.LatLng( 48.9279794, 2.2420526), 
+                                                'zoom' : 14, 
+                                    'mapTypeId' : google.maps.MapTypeId.ROADMAP});} 
+                       // actualisation lorsque la page est chargée 
+                                    google.maps.event.addDomListener( window, 'load', initCarte); 
+                                                </script>
+                                                <div id="div_carte"></div>
+                
+                
+                <a href="#Menu" class="home_btn">Acceuil</a> 
+                <a href="#Divertissement" class="page_nav_btn avant">Retour</a>
+                <a href="#Menu" class="page_nav_btn apres">Avancer</a>
+            	</div> 
+                </div>
+
+                <div class="half right">
+                    <div id="comment-form">
+                    <h3>Ajouter un commentaire</h3>
+                    <form action="http://www.lyc-maupassant-colombes.ac-versailles.fr//" method="post">
+                    
+                    <div class="form_fields">
+                      <div class="form_field">
+                        <label for="commentform-name">Nom</label>
+                        <input type="text" class="form_field_textfield" id="commentform-name" value="" name="comment[author]" />
+                      </div>
+                      <div class="form_field">
+                        <label for="commentform-email">E-mail</label>
+                        <input type="text" class="form_field_textfield" id="commentform-email" value="" name="comment[author_email]" />
+                      </div>
+                      <div class="form_field">
+                        <label for="comment-body">Commenter</label><br>
+                        <textarea class="form_field_textarea" rows="4" cols="5" name="comment[body]" id="comment-body"></textarea>
+                      </div>
+                    </div>  
+                    <div class="form_submit">
+                      <input type="submit" value="Envoyer " />
+                    </div>
+                    <div style="display:none; visibility:hidden;">Email :<input id="fci_comment_email" name="comment[email]" type="text" /></div></form> 
+                  </div>
+                </div>
+                
+                <!--fin de contacter nous!-->
+            
+        </div> 
+    </div>
+</div>
+
+    <div id="footer">
+        <p> <a >SITE CRÉÉ PAR ACHRAF L . /MAX L.  /FREDERIC X. / HTML+ CSS LIBRE de droit </a> <a href="https://fr.wikipedia.org/wiki/Copyleft" target="_blank" >Licences libres copyleft</a></p>
+        <!--
+Mako - Beam (Original) [Free]                                             https://www.youtube.com/watch?v=YrvlVLLabro
+Krewella - Come And Get It (Razihel Remix) [Free]                         https://www.youtube.com/watch?v=85UQsB9odZQ
+Vicetone vs. Popeska - The New Kings Ft. Luciana [Free]                   https://www.youtube.com/watch?v=WfJfyvpXcjE
+Friendzone ft. The Eden Project - Iris [Free]                             https://www.youtube.com/watch?v=IIZv1IiL-S4
+Hook N Sling & Nervo - Reason (Vicetone Remix) [Free]                     https://www.youtube.com/watch?v=Z9EB31GqVuc
+Doctor P ft. Eva Simons - Bulletproof (Case & Point Bootleg/Remix) [Free] https://www.youtube.com/watch?v=LK9OOb8MfqI
+
+
+[FREE] mix by proximity .To owners or copyright holders: If you do not see your Credit, Please send us a message and we'll add you gladly, it's not on purpose!
+Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. ---- I do not claim ownership of the audio / music / films used in this video. All rights go to the artists credited above.
+        --> 
+ <!-- la balise object permet également de lire des fichiers audio,et prend parfois en charge certains formats non supportés par la balise <audio> (comme le mp3 avec Firefox par exemple). -->
+ <object type="audio/mpeg" width="300" height="30" data="mix_by_achraf.mp3">
+<param name="filename" value="mix_by_achraf.mp3" />
+<param name="autostart" value="true" />
+<param name="loop" value="false" />
+</object>
+
+
+    </div>
+
+</body> 
+</html>
